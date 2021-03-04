@@ -6,9 +6,9 @@ public class Board { // Tabuleiro
 	private int columns;
 	private Piece[][] pieces;
 	
-	public Board(int rows, int cloums) {
+	public Board(int rows, int columns) {
 		this.rows = rows;
-		this.columns = cloums;
+		this.columns = columns;
 		pieces = new Piece [rows] [columns];
 	}
 
@@ -20,12 +20,20 @@ public class Board { // Tabuleiro
 		this.rows = rows;
 	}
 
-	public int getCloums() {
+	public int getColumns() {
 		return columns;
 	}
 
-	public void setCloums(int cloums) {
-		this.columns = cloums;
+	public void setCloums(int columns) {
+		this.columns = columns;
+	}
+	
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
+	
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()];
 	}
 	
 	

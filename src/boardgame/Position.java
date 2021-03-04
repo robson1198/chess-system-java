@@ -22,13 +22,13 @@ public class Position {
 	}
 
 
-	public int getColun() {
+	public int getColumn() {
 		return column;
 	}
 
 
-	public void setColun(int colun) {
-		this.column = colun;
+	public void setColumn(int column) {
+		this.column = column;
 	}
 	
 	@Override
